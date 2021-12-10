@@ -10,7 +10,7 @@ const logger = require('morgan');
 // dotenv.config();
 
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 
 const MONGO_URI = "mongodb+srv://mongotut:testing123@cluster0.kogqa.mongodb.net/login-registration?retryWrites=true&w=majority"
 
@@ -44,7 +44,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 //routes middlewrae
-app.use("/api/route/|/", routes)
+app.use("/api/route|/", routes)
 // app.use("/api/route|/|https://ifeanyi-nodejs-login-app.herokuapp.com/", routes)
 // app.use("https://lace-sand-citipati.glitch.me|/", routes)
 
