@@ -13,10 +13,10 @@ dotenv.config();
 
 const port = process.env.PORT || 5000
 
-
+MONGO_URI = "mongodb+srv://mongotut:testing123@cluster0.kogqa.mongodb.net/login-registration?retryWrites=true&w=majority"
 
 //connect to mongodb
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => console.log("connected to MongoDB"))
