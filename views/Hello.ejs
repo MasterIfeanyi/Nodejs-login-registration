@@ -1,0 +1,25 @@
+<%- include ("partials/header") %>
+<div class="app">
+
+    <%- include ("partials/sub-header.ejs") %> 
+
+
+    <section class="section mx-auto">
+
+        <div class="container mt-4">
+
+        <a href="/api/route" class="btn btn-lg btn-secondary">Go Back</a>
+
+        <div class="row">
+            <div class="col-12">
+                <h1>Hey <span class="text-primary"><%= user.name %></span></h1>
+                <p>Hello and Welcome</p>
+            </div>                
+        </div>
+
+    </section>
+
+    <%- include ("partials/sub-footer.ejs") %> 
+
+</div>
+<%- include ("partials/footer") %>                         
