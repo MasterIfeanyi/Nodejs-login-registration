@@ -44,7 +44,7 @@ app.set("views", path.join(__dirname, "views"));
 
 
 //routes middlewrae
-app.use("/api/routes/|/", routes)
+app.use("/api/route/|/", routes)
 // app.use("/api/route|/|https://ifeanyi-nodejs-login-app.herokuapp.com/", routes)
 // app.use("https://lace-sand-citipati.glitch.me|/", routes)
 
