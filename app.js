@@ -45,7 +45,8 @@ app.set("views", path.join(__dirname, "views"));
 
 
 //routes middlewrae
-app.use("/api/route|/", routes)
+// app.use("/api/route|/", routes)
+app.use("https://lace-sand-citipati.glitch.me|/", routes)
 
 
 
