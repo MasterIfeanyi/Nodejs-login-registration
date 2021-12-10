@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser")
 const {registerValidation}  = require("../../controllers/validation")
 const  {select, save, login, register, index}  = require("../../controllers/EmployeeController")
 const router = express.Router();

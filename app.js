@@ -4,16 +4,15 @@ const bodyParser = require("body-parser")
 const app = express();
 const {registerValidation} = require("./controllers/validation")
 const mongoose = require("mongoose");
-const { MONGO_URI } = require("./config/config");
 const routes = require("./routes/api/route")
 const logger = require('morgan');
-const dotenv = require('dotenv');
-dotenv.config();
+// const dotenv = require('dotenv');
+// dotenv.config();
 
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 
-MONGO_URI = "mongodb+srv://mongotut:testing123@cluster0.kogqa.mongodb.net/login-registration?retryWrites=true&w=majority"
+const MONGO_URI = "mongodb+srv://mongotut:testing123@cluster0.kogqa.mongodb.net/login-registration?retryWrites=true&w=majority"
 
 //connect to mongodb
 mongoose.connect(MONGO_URI, {
@@ -45,8 +44,8 @@ app.set("views", path.join(__dirname, "views"));
 
 
 //routes middlewrae
-app.use("/api/routes/", routes)
-// app.use("/api/route|/|https://ifeanyi-nodejs-login-app.herokuapp.com", routes)
+app.use("/api/routes/|/", routes)
+// app.use("/api/route|/|https://ifeanyi-nodejs-login-app.herokuapp.com/", routes)
 // app.use("https://lace-sand-citipati.glitch.me|/", routes)
 
 
