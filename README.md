@@ -1,6 +1,6 @@
 ## Check out the website below,
 
-Open [Ifeanyi-dadJokes-app](https://ifeanyi-nodejs-login-app.herokuapp.com/) to view it in the browser.
+Open [Ifeanyi-nodejslogin-app](https://ifeanyi-nodejs-login-app.herokuapp.com/) to view it in the browser.
 
 
 <!---
